@@ -17,7 +17,7 @@ require('events').EventEmitter.defaultMaxListeners = 25; // or a higher value if
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:5173', // Frontend URL
+  origin: 'https://crm-3-beta.vercel.app/', // Frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   preflightContinue: false,
