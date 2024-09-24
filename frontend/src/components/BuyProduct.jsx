@@ -20,7 +20,7 @@ const BuyProduct = () => {
 
       try {
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/products",
+          "https://crm3-h8hk.onrender.com/api/products",
           config
         );
         setProducts(response.data);
@@ -45,7 +45,7 @@ const BuyProduct = () => {
 
     try {
       const response = await axios.post(
-        `http://127.0.0.1:5000/api/products/buy`,
+        `https://crm3-h8hk.onrender.com/api/products/buy`,
         { productId },
         config
       );

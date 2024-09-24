@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/auth'; // Remove the trailing slash
+const API_URL = 'https://crm3-h8hk.onrender.com/api/auth'; // Remove the trailing slash
 
 
 // Register user

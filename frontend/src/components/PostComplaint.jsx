@@ -21,7 +21,7 @@ const PostComplaint = () => {
         };
 
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/products",
+          "https://crm3-h8hk.onrender.com/api/products",
           config
         );
         setProducts(response.data); // Assuming the response contains an array of products
@@ -51,7 +51,7 @@ const PostComplaint = () => {
 
     try {
       const res = await axios.post(
-        "http://127.0.0.1:5000/api/complaints",
+        "https://crm3-h8hk.onrender.com/api/complaints",
         complaintData,
         config
       );

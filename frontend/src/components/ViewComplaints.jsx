@@ -22,7 +22,7 @@ const ViewComplaints = () => {
         };
 
         const { data } = await axios.get(
-          "http://127.0.0.1:5000/api/complaints",
+          "https://crm3-h8hk.onrender.com/api/complaints",
           config
         ); 
         console.log(data);

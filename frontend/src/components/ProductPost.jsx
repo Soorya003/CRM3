@@ -23,7 +23,7 @@ const ProductPost = () => {
     console.log(config);
     try {
       await axios.post(
-        "http://127.0.0.1:5000/api/products",
+        "https://crm3-h8hk.onrender.com/api/products",
         { name, price, description },
         config
       );

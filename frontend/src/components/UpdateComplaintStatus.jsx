@@ -22,7 +22,7 @@ const UpdateComplaintStatus = () => {
         };
 
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/complaints",
+          "https://crm3-h8hk.onrender.com/api/complaints",
           config
         );
         setComplaints(response.data); // Ensure response.data is an array
@@ -49,7 +49,7 @@ const UpdateComplaintStatus = () => {
       };
 
       await axios.put(
-        `http://127.0.0.1:5000/api/complaints/${complaintId}`,
+        `https://crm3-h8hk.onrender.com/api/complaints/${complaintId}`,
         { status },
         config
       );

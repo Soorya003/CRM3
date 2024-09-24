@@ -14,11 +14,11 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const complaintsData = await axios.get('http://127.0.0.1:5000/api/admin/complaints');
-        const feedbackData = await axios.get('http://127.0.0.1:5000/api/admin/feedback');
-        const productData = await axios.get('http://127.0.0.1:5000/api/admin/products');
-        const orderData = await axios.get('http://127.0.0.1:5000/api/admin/orders');
-        const reportData = await axios.get('http://127.0.0.1:5000/api/admin/reports');
+        const complaintsData = await axios.get('https://crm3-h8hk.onrender.com/api/admin/complaints');
+        const feedbackData = await axios.get('https://crm3-h8hk.onrender.com/api/admin/feedback');
+        const productData = await axios.get('https://crm3-h8hk.onrender.com/api/admin/products');
+        const orderData = await axios.get('https://crm3-h8hk.onrender.com/api/admin/orders');
+        const reportData = await axios.get('https://crm3-h8hk.onrender.com/api/admin/reports');
 
         setComplaints(complaintsData.data);
         setFeedbacks(feedbackData.data);

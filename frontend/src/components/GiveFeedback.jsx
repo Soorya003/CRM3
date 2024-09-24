@@ -18,7 +18,7 @@ const GiveFeedback = () => {
       },
     };
     await axios.post(
-      "http://127.0.0.1:5000/api/feedback",
+      "https://crm3-h8hk.onrender.com/api/feedback",
       { comments, rating },
       config
     );
